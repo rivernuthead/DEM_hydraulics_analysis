@@ -20,7 +20,6 @@ start = time.time() # Set initial time
 # SETUP SCRIPT PARAMETERS and RUN MODE
 ###############################################################################
 
-
 '''
 run mode:
     1 = one run at time
@@ -349,10 +348,10 @@ for run in RUNS:
 
             # Guess values:
             D0 = (Dmax-Dmin)/2 # Water dept
-            Qn, Omega, b, B, alpha, beta, Qs, count_active = MotoUniforme(S, y_coord, z_coord, D0, NG, teta_c, ds) # Discharge
+            Qn, Omega, b, B, alpha, beta, Qs, count_active = MotoUniformeC(S, y_coord, z_coord, D0, NG, teta_c, ds) # Discharge
             # Discharge extreme values
-            Qmax, Omega, b, B, alpha, beta, Qs, count_active = MotoUniforme(S, y_coord, z_coord, Dmax, NG, teta_c, ds)
-            Qmin, Omega, b, B, alpha, beta, Qs, count_active = MotoUniforme(S, y_coord, z_coord, Dmin, NG, teta_c, ds)
+            Qmax, Omega, b, B, alpha, beta, Qs, count_active = MotoUniformeC(S, y_coord, z_coord, Dmax, NG, teta_c, ds)
+            Qmin, Omega, b, B, alpha, beta, Qs, count_active = MotoUniformeC(S, y_coord, z_coord, Dmin, NG, teta_c, ds)
             Q_target = Q/1000 # Target discharge [m^3/s]
             if np.sign(Qmax-Q_target)==np.sign(Qmin-Q_target):
                 print(' Soluntion out of boundaries')
@@ -437,12 +436,9 @@ for run in RUNS:
         print('Averaged DEMs residual slope: ', np.average(slope_res))
 
 
- 
-
-
-    ###########################################################################
-    # PLOTS
-    ###########################################################################
+###########################################################################
+# PLOTS
+###########################################################################
 
 
 

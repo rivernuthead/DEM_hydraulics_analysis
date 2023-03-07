@@ -1,0 +1,7 @@
+DEM name, residual slope [m/m], BRI [mm], SD [mm]
+matrix_bed_norm_q20_1s0.txt, -2.746634e-04,8.415, 9.060, 
+matrix_bed_norm_q20_1s1.txt, -2.730160e-04,7.897, 8.655, 
+matrix_bed_norm_q20_1s2.txt, -3.490790e-04,8.103, 8.726, 
+matrix_bed_norm_q20_1s3.txt, -4.954114e-04,8.010, 8.827, 
+matrix_bed_norm_q20_1s4.txt, -4.809668e-04,8.039, 8.814, 
+matrix_bed_norm_q20_1s5.txt, -5.105619e-04,8.326, 9.099, 
